@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gemechu Bonsa</title> 
+    <style>
+
+        @media (max-width: 480px) {
+            .tab-tittles {
+                flex-wrap: nowrap;
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+        
+            .tab-links {
+                flex: 1; 
+                font-size: 12px; 
+                padding: 8px;
+            }
+        }
+        @media (max-width: 480px) {
+            #services .container {
+                width: 100%;
+                padding: 0 10px;
+            }
+        }
+        
+@media (max-width: 480px) {
+    nav {
+        width: 100%; 
+        padding: 0;
+        background: transparent;
+        overflow-x: auto; 
+        white-space: nowrap; 
+    }
+
+    nav ul {
+        display: flex; 
+        flex-wrap: nowrap; 
+        gap: 0;
+        padding: 0;
+        overflow-x: auto;
+        scroll-snap-type: x mandatory;
+    }
+
+    nav ul li {
+        list-style: none;
+        scroll-snap-align: start; 
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        color: #333;
+        display: block;
+        padding: 0;
+        transition: color 0.3s ease-in-out;
+    }
+
+    nav ul li a:hover {
+        color: #007bff; 
+    }
+    nav ul::-webkit-scrollbar {
+        height: 5px;
+    }
+
+    nav ul::-webkit-scrollbar-thumb {
+        background: #007bff;
+        border-radius: 10px;
+    }
+}
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="portfolio.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="logo.png" alt="logo" class="logo" id="logo">
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li id="port"><a href="#">portfolio</a></li>
+                    <li><a href="#contact">contact</a></li>
+                    
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <div class="text-container" id="text"></div>
+                
+                
+            
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image.jpg" alt="">
+                </div>
+            <div class="about-col-2">
+                <h1 class="subtittle">About me</h1>
+                <p>
+                    Hello! I am Gemechu Bonsa, a passionate and driven full-stack web developer currently pursuing my Bachelor’s degree in Computer Science. As a 3rd-year student, I have cultivated a strong foundation in software development, problem-solving, and innovative thinking, complemented by hands-on experience in building dynamic and user-centric web applications.  
+                </p>
+                <p>
+                    My expertise spans both front-end and back-end development, where I specialize in creating responsive, scalable, and visually appealing websites. I am proficient in modern technologies such as HTML, CSS, JavaScript, React, Node.js, and databases like MySQL . Additionally, I am constantly expanding my skill set by exploring emerging tools and frameworks to stay ahead in the ever-evolving tech landscape.  
+                </p>
+                <p>
+                    What drives me is the opportunity to solve real-world problems through technology and deliver solutions that make a meaningful impact. Whether it’s designing intuitive user interfaces or optimizing server-side performance, I am committed to delivering high-quality results that align with user needs and business goals.  
+
+                </p>
+                <p>
+                    Beyond my technical skills, I am a collaborative team player with excellent communication abilities and a strong work ethic. I thrive in environments that challenge me to grow and innovate, and I am always eager to take on new projects that push the boundaries of what I can achieve.  
+                </p>
+                <p>
+                    As I continue my journey in computer science and web development, I am excited to contribute to innovative projects, expand my knowledge, and make a lasting impact in the tech industry.
+                </p>
+                <div class="tab-tittles">
+                    <p class=" tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MySQL</li>
+                            <li>php</li>
+                            <li>c++</li>
+                            <li>java</li>
+                        </ul>
+                    </div>
+                    
+                        <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>2025</span><br>Full Stack Web Developer Internship at CodeAlpha</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022-now</span><br>3rd Year Computer Science Student at Jimma University</li>
+                                <li><span>2025</span><br>Fundamental Programming Certificate from Udacity <br> <button id="btn"> <a href="https://www.udacity.com/certificate/e/72a94618-96df-11ef-b481-bb4c6022ffa0">click to see certificate</a> </button></li>
+                            </ul>
+                        </div>
+
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="subtittle">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web development</h2>
+                    <p>As a full-stack web developer, I build dynamic, responsive, and scalable web applications, handling both front-end and back-end development. With expertise in HTML, CSS, JavaScript, and backend technologies, I ensure seamless integration and functionality.</p>
+                    
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>UI/UX design</h2>
+                    <p>As a UI/UX designer, I create intuitive, user-centric interfaces that blend creativity with research-driven insights. With a keen eye for detail, I craft visually appealing and functional digital experiences, always striving for innovation and usability.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="flex">
+                <div class="contact-left">
+                    <h1 class="subtittle">Contact me</h1>
+                    <p> <i class="fa-solid fa-envelope"></i>gbonsa2@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i>+251919793177</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/164mNYGRFx/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/in/gemechu-bonsa-18a338336?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="http://t.me/Sinsinniko"><i class="fa-brands fa-telegram"></i></i></i></a>
+                    </div>
+                    <a href="my cv.pdf" download><button id="btn">
+                        download CV
+                    </button></a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" class="form" placeholder="Your Name" required>
+                        <input type="email" name="email"  class="form" placeholder="Your Email" required>
+                        <textarea name="message" rows="6"  class="form" placeholder="Your Message"></textarea>
+                        <button type="submit">submit</button>
+                    </form>
+                    <span id="msg"></span>
+                        
+                    </div>
+                </div>
+            </div>
+            
+    </div>
+    <footer>
+        <div class="copyright">
+            &copy; 2025 Gemechu Bonsa. All rights reserved.
+        </div>
+    </footer>
+    <script src="portfolio.js"></script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyfNJBvcIiVDv3HFug6Wa8JCenS4d2_mS0cKRS4FaXByA8sfchIusZDLEEUcXuB9pl8/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msgElement = document.getElementById('msg');
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msgElement.innerHTML = 'Message sent successfully!'
+                setTimeout(function() {
+                    msgElement.innerHTML = ''
+                },5000)
+                form.reset()
+  
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+      
+</body>
+</html>
